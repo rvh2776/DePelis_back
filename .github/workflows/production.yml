@@ -34,7 +34,7 @@ jobs:
         mongoKey: ${{ secrets.mongoKey }}
         clousterName: ${{ secrets.clousterName }}
         dbName: ${{ secrets.dbName }}
-        PORT: ${{ PORT }}
+        PORT: ${{ secrets.PORT }}
       
     - run: npm start
     #- run: npm run build --if-present
