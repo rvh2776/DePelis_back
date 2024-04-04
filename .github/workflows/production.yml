@@ -29,6 +29,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm i
+      env: # Or as an environment variable
+      mongoUser: ${{ mongoUser }}
+      mongoKey: ${{ mongoKey }}
+      clousterName: ${{ clousterName }}
+      dbName: ${{ dbName }}
+      PORT: ${{ PORT }}
+      
     - run: npm start
     #- run: npm run build --if-present
     #- run: npm test
