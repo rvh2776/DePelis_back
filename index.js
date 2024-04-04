@@ -8,6 +8,13 @@ const app = require('./src/server');
 
 const port = process.env.PORT;
 
+const clousterName = process.env.clousterName;
+const dbName = process.env.dbName;
+const mongoUser = process.env.mongoUser;
+const mongoKey = process.env.mongoKey;
+
+console.log(clousterName, dbName, mongoKey, mongoUser)
+
 dbCon()
     .then(() => {
         app.listen(port, () => {
