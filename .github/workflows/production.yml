@@ -34,7 +34,6 @@ jobs:
     # - run: npm start
 
     - runs:
-        using: 'node18'
         main: 'index.js'
     
       env: # Or as an environment variable
