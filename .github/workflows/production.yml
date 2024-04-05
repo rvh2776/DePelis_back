@@ -33,7 +33,7 @@ jobs:
     # - run: npm start >> logfile.txt 2>&1 &
     # - run: npm start
 
-    - runs:
+    - run:
         main: 'index.js'
     
       env: # Or as an environment variable
