@@ -36,7 +36,7 @@ jobs:
         DBNAME: ${{ secrets.DBNAME }}
         PORT: ${{ secrets.PORT }}
 
-    
+  steps:  
     - name: Imprimir Variables
     - run: |
         echo "MONGOUSER: $MONGOUSER"    
