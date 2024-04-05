@@ -30,7 +30,7 @@ jobs:
         cache: 'npm'
     
     - run: npm i
-    - run: npm start
+    # - run: npm start
     
       env: # Or as an environment variable
         MONGOUSER: ${{ secrets.MONGOUSER }}
