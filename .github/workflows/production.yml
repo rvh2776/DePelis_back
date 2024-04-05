@@ -29,8 +29,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     
-    - run: npm i
-    - run: sleep 10 && npm start
+    - run: npm ci
+    - run: npm start
     
       env: # Or as an environment variable
         MONGOUSER: ${{ secrets.MONGOUSER }}
