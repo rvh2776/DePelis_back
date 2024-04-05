@@ -28,9 +28,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    
-    - run: npm i
-    # - run: npm start >> logfile.txt 2>&1 &
 
       env: # Or as an environment variable
         MONGOUSER: ${{ secrets.MONGOUSER }}
@@ -38,6 +35,16 @@ jobs:
         CLOUSTERNAME: ${{ secrets.CLOUSTERNAME }}
         DBNAME: ${{ secrets.DBNAME }}
         PORT: ${{ secrets.PORT }}
+
+    - run: npm i
+    # - run: npm start >> logfile.txt 2>&1 &
+
+      # env: # Or as an environment variable
+      #   MONGOUSER: ${{ secrets.MONGOUSER }}
+      #   MONGOKEY: ${{ secrets.MONGOKEY }}
+      #   CLOUSTERNAME: ${{ secrets.CLOUSTERNAME }}
+      #   DBNAME: ${{ secrets.DBNAME }}
+      #   PORT: ${{ secrets.PORT }}
 
     - name: Post Start Stop
       run: |
