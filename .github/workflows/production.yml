@@ -38,7 +38,7 @@ jobs:
 
   steps:  
     - name: Imprimir Variables
-    - run: |
+      run: |
         echo "MONGOUSER: $MONGOUSER"    
         echo "MONGOKEY: $MONGOKEY"
         echo "CLOUSTERNAME: $CLOUSTERNAME"
