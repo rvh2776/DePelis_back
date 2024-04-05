@@ -31,7 +31,8 @@ jobs:
     
     - run: npm i
     # - run: npm start >> logfile.txt 2>&1 &
-    - run: npm start
+    # - run: npm start
+    - run: npm run start-server
     
       env: # Or as an environment variable
         MONGOUSER: ${{ secrets.MONGOUSER }}
