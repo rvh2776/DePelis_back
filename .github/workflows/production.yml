@@ -30,10 +30,10 @@ jobs:
         cache: 'npm'
     - run: npm i
       env: # Or as an environment variable
-        MONGOUSER: ${{ secrets.mongoUser }}
-        MONGOKEY: ${{ secrets.mongoKey }}
-        CLOUSTERNAME: ${{ secrets.clousterName }}
-        DBNAME: ${{ secrets.dbName }}
+        MONGOUSER: ${{ secrets.MONGOUSER }}
+        MONGOKEY: ${{ secrets.MONGOKEY }}
+        CLOUSTERNAME: ${{ secrets.CLOUSTERNAME }}
+        DBNAME: ${{ secrets.DBNAME }}
         PORT: ${{ secrets.PORT }}
       
     - run: npm start
