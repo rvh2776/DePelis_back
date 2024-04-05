@@ -39,11 +39,11 @@ jobs:
     
     - name: Imprimir Variables
     - run: |
-      echo "MONGOUSER: $MONGOUSER"    
-      echo "MONGOKEY: $MONGOKEY"
-      echo "CLOUSTERNAME: $CLOUSTERNAME"
-      echo "DBNAME: $DBNAME"
-      echo "PORT: $PORT"
+        echo "MONGOUSER: $MONGOUSER"    
+        echo "MONGOKEY: $MONGOKEY"
+        echo "CLOUSTERNAME: $CLOUSTERNAME"
+        echo "DBNAME: $DBNAME"
+        echo "PORT: $PORT"
 
     - run: npm start
     #- run: npm run build --if-present
