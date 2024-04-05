@@ -38,7 +38,7 @@ jobs:
         CLOUSTERNAME: ${{ secrets.CLOUSTERNAME }}
         DBNAME: ${{ secrets.DBNAME }}
         # PORT: ${{ secrets.PORT }}
-        PORT: ${{ PORT }}
+        PORT: ${{ env.PORT }}
 
     #- run: npm run build --if-present
     #- run: npm test
