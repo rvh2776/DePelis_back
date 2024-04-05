@@ -39,5 +39,9 @@ jobs:
         DBNAME: ${{ secrets.DBNAME }}
         PORT: ${{ secrets.PORT }}
 
+    - name: Post Start Stop
+      run: |
+        echo "Post start step ejecuted successfuly"
+        
     #- run: npm run build --if-present
     #- run: npm test
