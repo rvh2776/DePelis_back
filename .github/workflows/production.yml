@@ -30,17 +30,11 @@ jobs:
         cache: 'npm'
     - run: npm i
       env: # Or as an environment variable
-        MONGOUSER: ${{ secrets.MONGOUSER }}
+        MONGOUSER: $%% secrets.MONGOUSER %%
         MONGOKEY: ${{ secrets.MONGOKEY }}
         CLOUSTERNAME: ${{ secrets.CLOUSTERNAME }}
         DBNAME: ${{ secrets.DBNAME }}
         PORT: ${{ secrets.PORT }}
-
-        echo "MONGOUSER: $MONGOUSER"    
-        echo "MONGOKEY: $MONGOKEY"
-        echo "CLOUSTERNAME: $CLOUSTERNAME"
-        echo "DBNAME: $DBNAME"
-        echo "PORT: $PORT"
 
     - run: npm start
     #- run: npm run build --if-present
