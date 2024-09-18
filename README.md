@@ -1,11 +1,25 @@
-# SoyHenry: Carrera full stack developer (M2).
+<p align="center">
+  <img src="/images/DePelisBack.png" alt="Vista del Portfolio">
+</p>
 
-### Descripción:
+
+# Movie Page Creator - Back-end
+
+### Descripción: Carrera full stack developer: SoyHenry (M2).
 #### Tarea módulo: M2, consiste en crear una pagina web de peliculas.
 
 En esta actividad se utilizán las siguientes tecnologías: HTML, CSS, JavaScript, AJAX, Express, Node, Mongo, Mongoose, Axios, Nodemon, Cors, DotEnv, Morgan...
 
 ---
+
+### Instrucciones para clonar e instalar dependencias.
+
+```
+git clone git@github.com:rvh2776/DePelis_back.git
+cd ..
+cd DePelis_back/
+npm install
+```
 
 ### Antes de iniciar el proyecto, se debe renombrar el archivo `.env.example` a `.env`
 Dentro de este archivo, se encuentran las variables de entorno necesarias para la conexión a la base de datos y el puerto de escucha del servidor Express.
@@ -34,30 +48,12 @@ PORT=3001
 
 Se deben ejecutar el frontend y el backend por separado.
 
-#### Frontend: en dos consolas separadas, ejecute.
-```
-npm run build
-npm star
-```
-
 #### BackEnd: en una consola independiente, ejecute.
 ```
-npm star
+npm start
 ```
 
 ---
-### Instrucciones para clonar e instalar dependencias.
-
-```
-git clone git@github.com:rvh2776/DePelis_back.git
-cd front/
-npm install
-
-cd ..
-cd back/
-npm install
-
-```
 
 ### Instrucciones para subir los avances al repositorio.
 
