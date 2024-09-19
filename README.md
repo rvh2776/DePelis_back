@@ -46,8 +46,6 @@ PORT=3001
 
 ### Modo de ejecutar el proyecto.
 
-Se deben ejecutar el frontend y el backend por separado.
-
 #### BackEnd: en una consola independiente, ejecute.
 ```
 npm start
